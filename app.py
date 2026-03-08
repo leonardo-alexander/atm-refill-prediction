@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from src.predict import turnover
+from predict import turnover
 
 app = FastAPI(title="ATM Refill Prediction API")
 

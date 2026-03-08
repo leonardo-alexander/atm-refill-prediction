@@ -1,8 +1,14 @@
+from huggingface_hub import hf_hub_download
 import joblib
 import numpy as np
 import pandas as pd
 
-bundle = joblib.load("models/rf_model.pkl")
+model_path = hf_hub_download(
+    repo_id="leonardo-alexander/atm-randomforest",
+    filename="rf_model.pkl"
+)
+
+bundle = joblib.load(model_path)
 
 model = bundle["model"]
 features = bundle["features"]
