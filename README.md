@@ -103,7 +103,7 @@ Example output:
 - FastAPI
 
 ## Project Structure
-```
+```text
 atm-refill-prediction
 │
 ├── data/
